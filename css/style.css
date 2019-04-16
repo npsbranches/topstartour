@@ -39,11 +39,36 @@ textarea {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+.btn-blue {
+    background: #196dc7;
+    color: #fff;
+    padding: 15px 25px;
+    transition: 0.2s;
+}
+
+.btn-blue:hover {
+    background: #0652a3;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 .container {
     max-width: 1200px;
     width: 100%;
     margin: auto;
     padding: 0 15px;
+}
+
+.section-title {
+    font-size: 34px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -59,9 +84,10 @@ textarea {
 }
 
 .header.sticky {
-    background-image: url('../images/backgrounds/header-bg.jpg');
+    background-image: url('../images/backgrounds/header-bg-shapes.png');
     background-size: cover;
     background-position: center;
+    background-color: #000;
 }
 
 .header .container {
@@ -108,6 +134,8 @@ textarea {
     margin-right: 5px;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 .hero {
     width: 100%;
     height: 100vh;
@@ -128,16 +156,14 @@ textarea {
     pointer-events: none;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WHY UZBEKISTAN * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 .why-uzbekistan {
-    /* margin-top: 200px; */
     padding-top: 40px;
     background: #f9f9f9;
 }
 
-.why-uzbekistan h2 {
-    font-size: 34px;
-    font-weight: 800;
-    text-align: center;
+.why-uzbekistan .section-title {
     margin-bottom: 30px;
 }
 
@@ -150,4 +176,306 @@ textarea {
 .explore-uzbekistan {
     transform: translateY(50%);
     padding-left: 50px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HOME QUOTE * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.home-quote {
+    padding-bottom: 40px;
+}
+
+.home-quote-card {
+    max-width: 880px;
+    width: 100%;
+    height: 240px;
+    background-image: url('../images/backgrounds/quote-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.home-quote-card blockquote {
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.home-quote-card span {
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    margin-left: 400px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ADVANTAGES * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.advantages {
+    background: #f9f9f9;
+    padding: 40px 0;
+}
+
+.advantages .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.advantages-card {
+    flex-basis: 35%;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-card h3 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.advantages-card img {
+    height: 100px;
+    object-fit: contain;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WHERE TO GO * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.where-to-go {
+    padding: 100px 0;
+}
+
+.where-to-go .btn-blue {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 170px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * TOURS CARDS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.tours {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.tour {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tour-offer {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: #e10000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.tour-photo {
+    width: 100%;
+    height: 270px;
+}
+
+.tour-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-info {
+    background-image: url('../images/backgrounds/tours-bg.png');
+    background-size: cover;
+    background-position: center center;
+    padding: 10px;
+    height: 100%;
+}
+
+.tour-name {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tour-top-block {
+    display: flex;
+    align-items: center;
+}
+
+.tour-cities {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.tour-cities span {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 400;
+}
+
+.tour-keys {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.tour-keys span {
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.tour-middle-block {
+    display: flex;
+    margin: 10px 0;
+}
+
+.tour-comfort {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.tour-comfort i {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 4px;
+}
+
+
+.tour-rating i {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.tour-rating {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.white-line {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+}
+
+.tour-description {
+    padding: 10px 0;
+}
+
+.tour-description p {
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HOME NEWS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.home-news {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+.home-news .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-news-card {
+    width: 150px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-news-photo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.home-news-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-news-card a {
+    text-align: center;
+    font-size: 18px;
+    color: #1e82fe;
+    font-family: 'GothamPro', sans-serif;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HOME NEWS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.feedback {
+    padding: 100px 0;
+}
+
+
+.feedback .container {
+    max-width: 950px;
+    height: 630px;
+    background: url('../images/backgrounds/feedback-bg.jpg') no-repeat;
+}
+
+.feedback-form {
+    padding: 50px;
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-form h3 {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'GothamPro', sans-serif;
+    
 }
