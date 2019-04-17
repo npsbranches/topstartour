@@ -118,6 +118,10 @@ textarea {
     color: #fff;
 }
 
+.menu-header ul li a:hover {
+    color: #b8b8b8;
+}
+
 .tel-header {
     font-size: 14px;
     font-weight: 900;
@@ -435,6 +439,10 @@ textarea {
     text-align: center;
     font-size: 18px;
     color: #1e82fe;
+}
+
+.home-news-card a:hover {
+    text-decoration: underline;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * FEEDBACK * * * * * * * * * * * * * * * * * * * * * * * * * */
