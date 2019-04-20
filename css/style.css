@@ -502,9 +502,10 @@ textarea {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .footer {
-    background-image: url('../images/backgrounds/footer-bg.jpg');
+    background-image: url('../images/backgrounds/footer-bg-shapes.png');
     background-size: cover;
     background-position: center center;
+    background-color: #111;
     padding: 25px 0;
 }
 
