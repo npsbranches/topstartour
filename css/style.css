@@ -860,6 +860,28 @@ textarea {
         object-fit: contain;
     }
 }
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 820 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 820px) {
+
+    .home-quote-card {
+        /* justify-content: unset;
+        padding-top: 70px; */
+        background-size: cover;
+    }
+    .home-quote-card blockquote {
+        font-size: 20px;
+        /* margin-bottom: 0; */
+    }
+    .home-quote-card span {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .home-quote .container {
+        padding-right: 0;
+    }
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 768 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 768px) {
@@ -874,6 +896,14 @@ textarea {
     .explore-uzbekistan {
         padding-left: 15px;
     }
+    /* .home-quote-card {
+    
+        padding-top: 60px;
+    }
+    .home-quote-card blockquote {
+        font-size: 18px;
+ 
+    } */
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 674 * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -935,6 +965,20 @@ textarea {
 
     .header-tel i {
         font-size: 20px;
+    }
+
+    .header.sticky .header-menu .sub-menu {
+       top: unset;
+        background: none;
+        box-shadow: none;
+    }
+    
+    .header.sticky .header-menu .sub-menu li a {
+        color: #fff;
+    }
+    
+    .header.sticky .header-menu .sub-menu li a:hover {
+        color: #b8b8b8;
     }
 
 
