@@ -932,6 +932,10 @@ textarea {
     .advantages-card {
         flex-basis: 50%;
     }
+
+    .copyright {
+        margin-top: 50px;
+    }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 674 * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -1007,6 +1011,42 @@ textarea {
 
     .header.sticky .header-menu .sub-menu li a:hover {
         color: #b8b8b8;
+    }
+
+
+    .footer {
+        background-size: unset;
+    }
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-menu {
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-menu ul li {
+        margin: 10px 0;
+    }
+
+    .footer-phone {
+        margin-top: 30px;
+    }
+
+    .footer-map {
+        width: 100%;
+        height: 300px;
+        margin-top: 30px;
     }
 }
 
