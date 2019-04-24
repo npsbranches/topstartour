@@ -3,6 +3,7 @@ var headerBtnBars = $('.btn-bars');
 
 headerBtnBars.click(function() {
     headerMobileMenu.toggleClass('active');
+    $(this).toggleClass('active');
 })
 
 var header = $('.header');

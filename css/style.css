@@ -67,6 +67,7 @@ textarea {
     left: 0;
     border-radius: 2px;
     background: #fff;
+    transition: 0.2s;
 }
 
 .btn-bars span:first-child {
@@ -79,6 +80,21 @@ textarea {
 
 .btn-bars span:nth-child(3) {
     bottom: 3px;
+}
+
+.btn-bars.active span:first-child {
+    top: 9px;
+    transform: rotate(-135deg);
+}
+
+.btn-bars.active span:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn-bars.active span:nth-child(3) {
+    bottom: 9px;
+    transform: rotate(135deg);
 }
 
 
@@ -878,6 +894,10 @@ textarea {
         align-items: center;
     }
 
+    .header-menu .sub-menu {
+        position: relative;
+    }
+
     .header-menu ul {
         flex-direction: column;
     }
@@ -891,7 +911,7 @@ textarea {
         font-size: 18px;
         font-weight: 500;
         align-items: center;
-        /* margin-top: 100px; */
+        margin-bottom: 50px;
     }
 
     .header-tel i {
