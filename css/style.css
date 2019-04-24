@@ -869,6 +869,9 @@ textarea {
     .home-news-card {
         margin: 50px 25px;
     }
+    .feedback {
+        padding: 0;
+    }
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 920 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -1014,6 +1017,11 @@ textarea {
     .tour {
         width: 300px;
         margin: 40px 0;
+    }
+    .feedback .container {
+        padding: 30px 15px;
+        justify-content: center;
+        height: unset;
     }
 }
 
