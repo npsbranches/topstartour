@@ -1,3 +1,10 @@
+var headerMobileMenu = $('.header-right');
+var headerBtnBars = $('.btn-bars');
+
+headerBtnBars.click(function() {
+    headerMobileMenu.toggleClass('active');
+})
+
 var header = $('.header');
 var headerMenu = $('.header-menu')
 var subMenu = $('.sub-menu');
@@ -50,3 +57,4 @@ $(document).click(function (e) {
     toursMenu.slideUp();
     e.stopPropagation();
 });
+
