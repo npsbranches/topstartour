@@ -863,6 +863,17 @@ textarea {
         object-fit: contain;
     }
 }
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 920 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 920px) {
+    .tours {
+        flex-wrap: wrap;
+    }
+
+    .tour {
+        width: 420px;
+    }
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 820 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 820px) {
@@ -979,14 +990,33 @@ textarea {
     }
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 576 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 576px) {
+    
+    .tour {
+        width: 300px;
+        margin: 40px 0;
+    }
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 480 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 480px) {
     .advantages-card {
         flex-basis: 100%;
     }
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 375 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-    /* .advantages-card img {
-        height: unset;
-    } */
+@media screen and (max-width: 375px) {
+    .advantages-card {
+        flex-basis: 100%;
+    }
+
+    .tours-menu-header h4 {
+        font-size: 16px;
+    }
+    .tours-menu ul li a {
+        font-size: 16px;
+    }
 }
