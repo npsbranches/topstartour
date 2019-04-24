@@ -6,7 +6,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -76,10 +75,17 @@ textarea {
     background-size: cover;
     background-position: center;
     height: 70px;
-    z-index: 1;
+    z-index: 9999;
     position: fixed;
     width: 100%;
     transition: 0.2s;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .header-logo a {
@@ -92,112 +98,9 @@ textarea {
     object-fit: contain;
 }
 
-.header.sticky {
-    background-image: url('../images/backgrounds/header-bg-shapes.png');
-    background-size: cover;
-    background-position: center;
-    background-color: #333;
-}
-
-.header .container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: space-between;
-}
-
 .header-right {
     display: flex;
     align-items: center;
-}
-
-.menu-header {
-    margin-right: 35px;
-}
-
-.menu-header ul {
-    display: flex;
-}
-
-.menu-header ul li {
-    margin: 0 20px;
-    padding: 10px 15px;
-    display: inline-flex;
-    position: relative;
-}
-
-.menu-header ul li.background {
-    background: #fff;
-}
-
-
-.header.sticky .menu-header ul li.background {
-    background: #333;
-}
-.menu-header ul li.background a,
-.menu-header ul li.background i {
-    color: #000;
-}
-.header.sticky .menu-header ul li.background a,
-.header.sticky .menu-header ul li.background i {
-    color: #fff;
-}
-
-.menu-header ul li i {
-    font-size: 20px;
-    margin-left: 10px;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.menu-header ul li i.rotate {
-    transform: rotate(180deg);
-}
-
-.menu-header ul li a {
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-}
-
-.menu-header ul li a:hover {
-    color: #b8b8b8;
-}
-
-.menu-header ul li a:hover~i {
-    color: #b8b8b8;
-}
-
-.menu-header .sub-menu {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    top: 100%;
-    left: -35px;
-    padding: 10px 15px;
-    margin-left: 35px;
-    width: 100%;
-}
-
-.menu-header .sub-menu.toggle {
-    display: flex;
-    background: #fff;
-}
-.header.sticky .menu-header .sub-menu.toggle {
-    background: #333;
-}
-
-.menu-header .sub-menu.toggle li a {
-    color: #000;
-}
-.header.sticky .menu-header .sub-menu.toggle li a {
-    color: #fff;
-}
-
-.menu-header .sub-menu li {
-    margin: 5px 0;
-    padding: 0;
 }
 
 .tel-header {
@@ -211,6 +114,93 @@ textarea {
     color: #fff;
     font-size: 18px;
     margin-right: 5px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER-MENU * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.header-menu {
+    margin-right: 35px;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu ul li {
+    position: relative;
+}
+
+.header-menu ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-flex;
+    transition: 0.2s;
+    margin: 0 20px;
+    padding: 10px 15px;
+}
+
+.header-menu ul li a i {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-flex;
+}
+
+.header-menu ul li a i.rotate {
+    transform: rotate(180deg);
+}
+
+.header-menu ul li a:hover {
+    color: #b8b8b8;
+}
+
+.header-menu ul li a:hover i {
+    color: #b8b8b8;
+}
+
+.header-menu .sub-menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    padding: 10px 35px;
+}
+
+.header-menu .sub-menu li a {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.header-menu .sub-menu.toggle {
+    display: flex;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER STICKY * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.header.sticky {
+    background-image: url('../images/backgrounds/header-bg-shapes.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header.sticky .header-menu .sub-menu {
+    top: 137%;
+    background: #ececec;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header.sticky .header-menu .sub-menu li a {
+    color: #333;
+}
+
+.header.sticky .header-menu .sub-menu li a:hover {
+    color: rgb(165, 165, 165);
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -340,6 +330,148 @@ textarea {
     margin: auto;
     width: 170px;
 }
+
+.tours-menu {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #222222;
+    margin: auto;
+    margin-bottom: 100px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.tours-menu * {
+    color: #fff;
+}
+
+.tours-menu-header {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+    cursor: pointer;
+    position: relative;
+}
+
+.tours-menu-header i {
+    font-size: 20px;
+    margin-right: 15px;
+    
+}
+
+.tours-menu-header h4 {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.tours-menu-header-text {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.tours-menu-blue {
+    height: 100%;
+    width: 65px;
+    background: #196dc7;
+    position: absolute;
+    right: 0;
+    transition: 0.2s;
+}
+
+.tours-menu-btn {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    right: 0;
+}
+
+.tours-menu.active .tours-menu-blue {
+    width: 100%;
+}
+
+.tours-menu.active .tours-menu-btn {
+    transform: rotate(-360deg);
+}
+
+.tours-menu-btn span {
+    background: #fff;
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+
+.tours-menu-btn span:first-child {
+    width: 15px;
+    top: 27px;
+    transform: rotate(45deg);
+    right: 17px;
+}
+
+.tours-menu-btn span:nth-child(2) {
+    width: 25px;
+    top: 32px;
+    right: 19px;
+}
+
+.tours-menu-btn span:nth-child(3) {
+    width: 15px;
+    top: 37px;
+    transform: rotate(-45deg);
+    right: 17px;
+}
+
+.tours-menu.active .tours-menu-btn span:first-child {
+    width: 25px;
+    top: 32px;
+}
+
+.tours-menu.active .tours-menu-btn span:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tours-menu.active .tours-menu-btn span:nth-child(3) {
+    width: 25px;
+    top: 32px;
+}
+
+.tours-menu ul {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #222222;
+    top: 65px;
+    z-index: 50;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tours-menu ul li a {
+    display: block;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 20px;
+    padding-left: 53px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+    transition: 0.2s;
+}
+.tours-menu ul li a:hover {
+    background: #333;
+}
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * TOURS CARDS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
