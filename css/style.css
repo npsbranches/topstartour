@@ -848,6 +848,18 @@ textarea {
 }
 
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1280 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 1280px) {
+    .explore-uzbekistan {
+        width: 70%;
+    }
+
+    .explore-uzbekistan img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 768 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 768px) {
@@ -857,6 +869,10 @@ textarea {
 
     .header-menu .sub-menu {
         padding: 10px 15px;
+    }
+
+    .explore-uzbekistan {
+        padding-left: 15px;
     }
 }
 
@@ -879,7 +895,7 @@ textarea {
         justify-content: center;
         padding: 50px;
         opacity: 0;
-        visibility: visible;
+        visibility: hidden;
         transition: 0.2s;
     }
 
