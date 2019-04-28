@@ -1757,6 +1757,16 @@ textarea {
     .copyright {
         margin-top: 50px;
     }
+    .tabs-links {
+        margin-right: 0;
+    }
+    .tab-item {
+        padding-left: 0;
+    }
+
+    .tab-link:after {
+        width: 16px;
+    }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 674 * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -1936,6 +1946,17 @@ textarea {
 
     .text-hero h2 {
         font-size: 60px;
+    }
+
+    .tab-item {
+        padding-right: 20px;
+    }
+
+    .tab-link {
+        font-size: 14px;
+    }
+    .tab-text {
+        font-size: 14px;
     }
 }
 
