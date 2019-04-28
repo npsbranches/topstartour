@@ -1948,7 +1948,10 @@ textarea {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 576 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 576px) {
-
+    .attractions-hover {
+        opacity: 1;
+        visibility: visible;
+    }
     .tour {
         width: 300px;
         margin: 40px 0;
