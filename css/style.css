@@ -1957,6 +1957,9 @@ textarea {
     .tab-text {
         font-size: 14px;
     }
+    .tab-title {
+        font-size: 20px;
+    }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 480 * * * * * * * * * * * * * * * * * * * * * * * * * */
