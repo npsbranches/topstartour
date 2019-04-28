@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Gilroy', sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
@@ -91,8 +91,8 @@ textarea {
 .btn-bars.active span:first-child {
     top: 9px;
     -webkit-transform: rotate(-135deg);
-        -ms-transform: rotate(-135deg);
-            transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 .btn-bars.active span:nth-child(2) {
@@ -103,8 +103,8 @@ textarea {
 .btn-bars.active span:nth-child(3) {
     bottom: 9px;
     -webkit-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-            transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 
@@ -132,29 +132,58 @@ textarea {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.header {
+.header,
+.header-pages {
     background-size: cover;
     background-position: center;
     height: 70px;
-    z-index: 9999;
+    z-index: 1000;
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
 }
 
-.header .container {
+.header-pages {
+
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header .container,
+.header-pages .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100%;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+.header-pages .header-menu .sub-menu {
+    top: 137%;
+    background: #ececec;
+    -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header-pages .header-menu .sub-menu li a {
+    color: #333;
+}
+
+.header-pages .header-menu .sub-menu li a:hover {
+    color: rgb(165, 165, 165);
 }
 
 .header-logo {
@@ -170,7 +199,7 @@ textarea {
 .header-logo img {
     height: 100%;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
 }
 
 .header-right {
@@ -178,8 +207,8 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .header-tel {
@@ -242,8 +271,8 @@ textarea {
 
 .header-menu ul li a i.rotate {
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .header-menu ul li a:hover {
@@ -259,8 +288,8 @@ textarea {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     top: 100%;
     left: 0;
     padding: 10px 35px;
@@ -285,14 +314,15 @@ textarea {
     background-position: center;
     background-color: #333;
     -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
+
 
 .header.sticky .header-menu .sub-menu {
     top: 137%;
     background: #ececec;
     -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 .header.sticky .header-menu .sub-menu li a {
@@ -313,11 +343,11 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
 }
 
@@ -326,7 +356,7 @@ textarea {
     top: 0;
     left: 0;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     pointer-events: none;
@@ -351,8 +381,8 @@ textarea {
 
 .explore-uzbekistan {
     -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-            transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
     padding-left: 50px;
 }
 
@@ -366,7 +396,6 @@ textarea {
     max-width: 880px;
     width: 100%;
     height: 240px;
-    background-image: url('../images/backgrounds/quote-bg.png');
     background-size: 100%;
     background-repeat: no-repeat;
     margin: auto;
@@ -375,14 +404,14 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 0 30px;
     position: relative;
 }
@@ -415,32 +444,32 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .advantages-card {
     -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
+    flex-basis: 35%;
     margin: 25px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -456,11 +485,11 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WHERE TO GO * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -484,13 +513,13 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     background: #222222;
     margin: auto;
     margin-bottom: 100px;
     -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
@@ -504,11 +533,11 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     z-index: 200;
     cursor: pointer;
     position: relative;
@@ -531,8 +560,8 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 0 20px;
     position: relative;
     z-index: 2;
@@ -562,8 +591,8 @@ textarea {
 
 .tours-menu.active .tours-menu-btn {
     -webkit-transform: rotate(-360deg);
-        -ms-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
 }
 
 .tours-menu-btn span {
@@ -580,8 +609,8 @@ textarea {
     width: 15px;
     top: 27px;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
     right: 17px;
 }
 
@@ -595,8 +624,8 @@ textarea {
     width: 15px;
     top: 37px;
     -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     right: 17px;
 }
 
@@ -621,8 +650,8 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     display: none;
     position: absolute;
     width: 100%;
@@ -630,7 +659,7 @@ textarea {
     top: 65px;
     z-index: 50;
     -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .tours-menu ul li a {
@@ -658,11 +687,15 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
 }
 
 .tour {
@@ -672,15 +705,15 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 40px 20px;
     position: relative;
     display: flex;
     flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .tour-offer {
@@ -704,7 +737,7 @@ textarea {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .tour-info {
@@ -729,8 +762,8 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .tour-cities {
@@ -739,10 +772,10 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
 }
 
 .tour-cities span {
@@ -759,10 +792,10 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
 }
 
 .tour-keys span {
@@ -784,10 +817,10 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .tour-comfort i {
@@ -808,10 +841,10 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .white-line {
@@ -845,8 +878,8 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .home-news-card {
@@ -857,8 +890,8 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .home-news-photo {
@@ -871,7 +904,7 @@ textarea {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .home-news-card a {
@@ -898,8 +931,8 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-left: 70px;
 }
 
@@ -916,15 +949,15 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .feedback-form h3 {
@@ -978,11 +1011,11 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .footer-logo a {
@@ -993,7 +1026,7 @@ textarea {
 .footer-logo img {
     height: 100%;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
 }
 
 .footer-right {
@@ -1009,14 +1042,14 @@ textarea {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 15px;
 }
 
@@ -1028,6 +1061,11 @@ textarea {
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+    transition: 0.2s;
+}
+
+.footer-menu ul li a:hover {
+    color: #b8b8b8;
 }
 
 .footer-phone {
@@ -1066,6 +1104,528 @@ textarea {
 }
 
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * TOURS PAGE * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.tours-content {
+    padding: 50px 0;
+    background: #f6f6f6
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * FEEDBACK TOURS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.feedback-tours-section {
+    padding: 100px 0;
+    background-image: url('../images/backgrounds/tours-feedback-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.feedback-tours {
+    background: rgba(255, 255, 255, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.feedback-tours .container {
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.feedback-tours-right {
+    max-width: 400px;
+    width: 100%;
+}
+
+.feedback-tours-form {
+    padding: 50px 0;
+}
+
+.feedback-tours-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.feedback-tours-form div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.feedback-tours h3 {
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 60px;
+    height: 50px;
+}
+
+
+.feedback-tours-form input {
+    border-bottom: 1px solid #b4a8a8;
+    margin: 15px 0;
+    margin-right: 30px;
+    width: 100%;
+}
+
+.feedback-tours-form input::-webkit-input-placeholder {
+    color: #000;
+}
+
+.feedback-tours-form input:-ms-input-placeholder {
+    color: #000;
+}
+
+.feedback-tours-form input::-ms-input-placeholder {
+    color: #000;
+}
+
+.feedback-tours-form input::placeholder {
+    color: #000;
+}
+
+.feedback-tours-form .btn-blue {
+    padding: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 60px;
+}
+
+.feedback-tours-form form span {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.feedback-tours-right {
+    max-width: 500px;
+    width: 100%;
+}
+
+
+.feedback-tours-right-contacts {
+    /* background: #fff; */
+    padding: 50px;
+    padding-right: 15px;
+}
+
+.feedback-tours-right-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.feedback-tours-right-card span:first-child {
+    font-size: 16px;
+}
+
+.feedback-tours-right-card span:nth-child(2) {
+    font-size: 18px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * CONTACTS PAGE * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.text-hero {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    padding: 15px;
+}
+
+.text-hero h2 {
+    font-size: 108px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * CONTACTS PAGE * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.contacts {
+    padding: 50px 0;
+    background-image: url('../images/backgrounds/contacts-bg.png');
+    background-color: #f6f6f6;
+    background-size: 60%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+.contacts .container {
+    display: flex;
+}
+
+
+.contacts-left,
+.contacts-right {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contacts h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.contacts h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.contacts-left p {
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.contacts-left p b {
+    font-weight: 900;
+}
+
+
+.contacts-left ul li {
+    margin: 15px 0;
+}
+
+.contacts-left ul li,
+.contacts-left ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.contacts-left ul li i {
+    width: 35px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.contacts-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts-right form div {
+    display: flex;
+    width: 100%;
+
+}
+
+.contacts-right form div input:nth-child(2) {
+    margin-left: 10px;
+}
+
+.contacts-right form input,
+.contacts-right form textarea {
+    background: #fff;
+    border: 1px solid #e4e2e0;
+    border-radius: 1px;
+    padding: 15px;
+    font-size: 14px;
+    color: #c7c7c7;
+    font-weight: 500;
+    width: 100%;
+    margin: 5px 0;
+    resize: none;
+}
+
+
+.contacts-right form input::placeholder,
+.contacts-right form textarea::placeholder {
+    font-size: 14px;
+    color: #c7c7c7;
+    font-weight: 500;
+}
+
+.contacts-right .btn-blue {
+    display: block;
+    margin: 15px 1px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * INFO PAGE * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.info-page {
+    background: #f6f6f6;
+    padding: 50px 0;
+}
+
+.info-page .section-title {
+    margin-bottom: 50px;
+}
+
+.info-hero {
+    background: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    margin-top: 70px;
+}
+
+.info-hero img {
+    max-width: 900px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * INFO PAGE TABS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.tabs {
+    position: relative;
+    display: flex;
+    /* min-height: 600px; */
+    align-items: center;
+    background-color: #333;
+    margin-bottom: 100px;
+    padding: 50px 15px;
+}
+
+.tabs-backgrounds img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.tabs-links {
+    position: relative;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-left: auto;
+}
+
+.tab-link {
+    font-size: 16px;
+    color: #a8a8a8;
+    padding: 5px 0;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tab-link.active {
+    color: #fff;
+}
+
+.tab-link.active:after {
+    /* height: 2px; */
+    /* width: 30px; */
+    background: #fff;
+}
+
+.tab-link:after {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: #a8a8a8;
+    display: block;
+    margin-left: 10px;
+}
+
+.tabs-content {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.tab-item {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+}
+
+.tab-title {
+    font-size: 64px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.tab-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 0 15px;
+    display: block;
+}
+
+.tab-text::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+}
+
+.tab-text::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.tab-text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #f4f4f4;
+}
+
+.tab-text::-webkit-scrollbar-thumb:hover {
+    background: #f4f4f4;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ATTRACTIONS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.attractions {
+    margin-bottom: 100px;
+}
+
+.attractions-card {
+    height: 100%;
+}
+
+.attractions-view {
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    display: block;
+}
+
+.attractions-view-img {
+    height: 100%;
+}
+
+.attractions-view:hover .attractions-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.attractions-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.attractions-hover span {
+    background: #fff;
+    color: #000;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 5px 40px;
+    mix-blend-mode: screen;
+}
+
+.attractions-more {
+    background: #fff;
+    z-index: 20;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    width: 90%;
+    margin: auto;
+    top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.attractions-more-img {
+    width: 100%;
+}
+
+.attractions-more-img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.attractions .owl-item {
+    height: 250px;
+}
+
+.attractions .owl-item img {
+    object-fit: cover !important;
+    height: 100% !important;
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+}
+
+.attractions-more-text {
+    background: #efefef;
+    padding: 20px 50px;
+}
+
+
+.attractions-more-text h3 {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.attractions-more-text p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1280 * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 1280px) {
@@ -1076,7 +1636,15 @@ textarea {
     .explore-uzbekistan img {
         width: 100%;
         -o-object-fit: contain;
-           object-fit: contain;
+        object-fit: contain;
+    }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100 * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 1100px) {
+    .text-hero h2 {
+        font-size: 80px;
     }
 }
 
@@ -1090,6 +1658,37 @@ textarea {
     .feedback {
         padding: 0;
     }
+
+    .feedback-tours {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .feedback-tours-right {
+        max-width: 100%;
+    }
+
+    .feedback-tours .container {
+        max-width: 100%;
+        padding: 50px;
+    }
+
+    .feedback-tours h3 {
+        height: unset;
+    }
+
+    .contacts .container {
+        flex-direction: column;
+    }
+    .tab-title {
+        font-size: 34px;
+    }
+
+    .tab-text {
+        font-size: 16px;
+    }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 920 * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -1097,7 +1696,7 @@ textarea {
 @media screen and (max-width: 920px) {
     .tours {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .tour {
@@ -1127,7 +1726,7 @@ textarea {
 
     .home-news .container {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .home-news-card {
@@ -1152,7 +1751,7 @@ textarea {
 
     .advantages-card {
         -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+        flex-basis: 50%;
     }
 
     .copyright {
@@ -1172,18 +1771,18 @@ textarea {
         background: #333;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         padding: 50px;
         opacity: 0;
         visibility: hidden;
@@ -1204,8 +1803,8 @@ textarea {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .header-menu .sub-menu {
@@ -1215,8 +1814,8 @@ textarea {
     .header-menu ul {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .header-menu ul li a {
@@ -1225,8 +1824,8 @@ textarea {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .header-tel {
@@ -1234,8 +1833,8 @@ textarea {
         font-size: 18px;
         font-weight: 500;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         margin-bottom: 50px;
     }
 
@@ -1247,7 +1846,22 @@ textarea {
         top: unset;
         background: none;
         -webkit-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
+    }
+
+    .header-pages .header-menu .sub-menu {
+        top: unset;
+        background: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .header-pages .header-menu .sub-menu li a {
+        color: #fff;
+    }
+
+    .header-pages .header-menu .sub-menu li a:hover {
+        color: #b8b8b8;
     }
 
     .header.sticky .header-menu .sub-menu li a {
@@ -1265,8 +1879,8 @@ textarea {
     .footer .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .footer-logo {
@@ -1276,16 +1890,16 @@ textarea {
     .footer-right {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         width: 100%;
     }
 
     .footer-menu {
         text-align: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .footer-menu ul li {
@@ -1315,9 +1929,13 @@ textarea {
     .feedback .container {
         padding: 30px 15px;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         height: unset;
+    }
+
+    .text-hero h2 {
+        font-size: 60px;
     }
 }
 
@@ -1326,7 +1944,15 @@ textarea {
 @media screen and (max-width: 480px) {
     .advantages-card {
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+        flex-basis: 100%;
+    }
+
+    .contacts-right form div {
+        flex-direction: column;
+    }
+
+    .contacts-right form div input:nth-child(2) {
+        margin-left: 0;
     }
 }
 
@@ -1335,7 +1961,7 @@ textarea {
 @media screen and (max-width: 375px) {
     .advantages-card {
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+        flex-basis: 100%;
     }
 
     .tours-menu-header h4 {

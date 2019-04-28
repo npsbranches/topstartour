@@ -1,7 +1,7 @@
 var headerMobileMenu = $('.header-right');
 var headerBtnBars = $('.btn-bars');
 
-headerBtnBars.click(function() {
+headerBtnBars.click(function () {
     headerMobileMenu.toggleClass('active');
     $(this).toggleClass('active');
 })
@@ -47,7 +47,7 @@ var toursMenuWrapper = $('.tours-menu');
 var toursMenuHeader = $('.tours-menu-header');
 var toursMenu = $('.tours-menu ul')
 
-toursMenuHeader.click( function() {
+toursMenuHeader.click(function () {
     toursMenuWrapper.toggleClass('active');
     toursMenu.slideToggle();
 })
@@ -59,3 +59,45 @@ $(document).click(function (e) {
     e.stopPropagation();
 });
 
+
+
+// TABS
+$(function () {
+    $('#cities-tabs .tab-item').not(':first').hide();
+    $('#cities-tabs .tabs-background').not(':first').hide();
+    $('#cities-tabs .tab-link').click(function () {
+        $('#cities-tabs .tab-link').removeClass('active').eq($(this).index()).addClass('active');
+        $('#cities-tabs .tab-item').hide().eq($(this).index()).fadeIn();
+        $('#cities-tabs .tabs-background').hide().eq($(this).index()).show();
+    });
+});
+
+$(function () {
+    $('#hotels-tabs .tab-item').not(':first').hide();
+    $('#hotels-tabs .tabs-background').not(':first').hide();
+    $('#hotels-tabs .tab-link').click(function () {
+        $('#hotels-tabs .tab-link').removeClass('active').eq($(this).index()).addClass('active');
+        $('#hotels-tabs .tab-item').hide().eq($(this).index()).fadeIn();
+        $('#hotels-tabs .tabs-background').hide().eq($(this).index()).show();
+    });
+})
+
+$('.attractions').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+
+
+$('.attractions-view').magnificPopup();
