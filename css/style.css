@@ -1576,7 +1576,7 @@ textarea {
     -o-transition: 0.2s;
     transition: 0.2s;
     width: 90%;
-    margin: auto;
+    margin: 20px auto;
     top: 20px;
     position: relative;
     display: flex;
@@ -1605,8 +1605,11 @@ textarea {
     color: #fff;
 }
 
-.attractions-more-text {
+.attractions-more-card {
     background: #efefef;
+}
+
+.attractions-more-text {
     padding: 20px 50px;
 }
 
@@ -1766,6 +1769,22 @@ textarea {
     .tab-link:after {
         width: 16px;
     }
+
+    .attractions-more-text {
+        padding: 15px 30px;
+    }
+    
+    
+    .attractions-more-text h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    .attractions-more-text p {
+        font-size: 16px;
+    }
+    
+    
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 674 * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -1959,6 +1978,20 @@ textarea {
     }
     .tab-title {
         font-size: 20px;
+    }
+
+    .attractions-more-text {
+        padding: 15px 30px;
+    }
+    
+    
+    .attractions-more-text h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .attractions-more-text p {
+        font-size: 14px;
     }
 }
 
