@@ -1,3 +1,14 @@
+$('.home-hero-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
+      
+
 $(".sub-menu a").click(function () {
     if (window.innerWidth < 576) {
         $('.header-right').toggleClass('active');
